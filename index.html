@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brayan web</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            border: 10px solid green; /* Borde verde */
+        }
 
+        header {
+            background-color: rgba(0, 128, 0, 0.8);
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: green;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#home">Inicio</a>
+            <a href="#about">Acerca de</a>
+            <a href="#services">Servicios</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Bienvenido al sitio web de Brayan</h1>
+        <p>Esta es la primera pagina web que logro publicar.</p>
+    </main>
+
+    <button class="whatsapp-btn" onclick="window.open('https://Wa.me/+5350030481', '_blank')">
+        Chat en WhatsApp
+    </button>
+
+</body>
+</html>
